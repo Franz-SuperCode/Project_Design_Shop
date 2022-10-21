@@ -1,0 +1,360 @@
+/*! ==========================================
+/*!            Allgemein
+/*!========================================== */
+
+/* Farbe: #323A45 / #848484 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0 8% 0 8%;
+}
+
+@font-face {
+    font-family: karla-light;
+    src: url("../fonts/Karla-Light.ttf");
+}
+
+@font-face {
+    font-family: karla-medium;
+    src: url("../fonts/Karla-Medium.ttf");
+}
+
+@font-face {
+    font-family: karla-regular;
+    src: url("../fonts/Karla-Regular.ttf");
+}
+
+img {
+    max-width: 100%;
+}
+
+/** ==========================================
+/**            Header
+/**========================================== */
+
+header {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*? ==========================================
+/*?            Main
+/*?========================================== */
+
+main {
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(14, 1fr); */
+    grid-template-areas:
+        "rucksack_bunt rucksack_bunt rucksack_bunt"
+        "lampe_braun rucksack_schwarz skateboard"
+        "kanne_schwarz autoo buch_hellrot"
+
+        "buch_weiss buch_weiss buch_weiss"
+        "buch_dunkelrot tablet flasche_schwarz"
+        " stuhl_weiss buch_braun buch_rot-weiss"
+
+        "lampe_schwarz lampe_schwarz lampe_schwarz"
+        "uhr_braun bild_spalten duschgel"
+        "kopfhoerer_gruen buch_gelb stuhl_kueche"
+
+        "buch_blau buch_blau buch_blau"
+        "buch_rot-schwarz wallet papier_schwarz"
+        "maus thermoflasche_schwarz tastatur"
+
+        "flaschen_schwarz-weiss flaschen_schwarz-weiss flaschen_schwarz-weiss"
+        "thermokanne sessel wasserfilter";
+
+    gap: 4rem;
+}
+
+/* ==================================== */
+
+.rucksack_bunt {
+    grid-area: rucksack_bunt;
+}
+
+.lampe_braun {
+    grid-area: lampe_braun;
+}
+
+.rucksack_schwarz {
+    grid-area: rucksack_schwarz;
+}
+
+.skateboard {
+    grid-area: skateboard;
+}
+
+.kanne_schwarz {
+    grid-area: kanne_schwarz;
+}
+
+.autoo {
+    grid-area: autoo;
+}
+
+.buch_hellrot {
+    grid-area: buch_hellrot;
+}
+
+/* ==================================== */
+
+.buch_weiss {
+    grid-area: buch_weiss;
+}
+
+.buch_dunkelrot {
+    grid-area: buch_dunkelrot;
+}
+
+.tablet {
+    grid-area: tablet;
+}
+
+.flasche_schwarz {
+    grid-area: flasche_schwarz;
+}
+
+.stuhl_weiss {
+    grid-area: stuhl_weiss;
+}
+
+.buch_braun {
+    grid-area: buch_braun;
+}
+
+.buch_rot-weiss {
+    grid-area: buch_rot-weiss;
+}
+
+.lampe_schwarz {
+    grid-area: lampe_schwarz;
+}
+
+.uhr_braun {
+    grid-area: uhr_braun;
+}
+
+.bild_spalten {
+    grid-area: bild_spalten;
+}
+
+.duschgel {
+    grid-area: duschgel;
+}
+
+.kopfhoerer_gruen {
+    grid-area: kopfhoerer_gruen;
+}
+
+.buch_gelb {
+    grid-area: buch_gelb;
+}
+
+.stuhl_kueche {
+    grid-area: stuhl_kueche;
+}
+
+.buch_blau {
+    grid-area: buch_blau;
+}
+
+.buch_rot-schwarz {
+    grid-area: buch_rot-schwarz;
+}
+
+.wallet {
+    grid-area: wallet;
+}
+
+.papier_schwarz {
+    grid-area: papier_schwarz;
+}
+
+.maus {
+    grid-area: maus;
+}
+
+.thermoflasche_schwarz {
+    grid-area: thermoflasche_schwarz;
+}
+
+.tastatur {
+    grid-area: tastatur;
+}
+
+.flaschen_schwarz-weiss {
+    grid-area: flaschen_schwarz-weiss;
+}
+
+.thermokanne {
+    grid-area: thermokanne;
+}
+
+.sessel {
+    grid-area: sessel;
+}
+
+.wasserfilter {
+    grid-area: wasserfilter;
+}
+
+/* ==================================== */
+main figure div {
+    display: flex;
+    justify-content: space-between;
+}
+
+main figure div a {
+    text-decoration: none;
+    color: black;
+}
+
+main figure>p {
+    color: #848484;
+    margin-top: 0.5rem;
+}
+
+/*TODO ==========================================
+/*TODO            Footer
+/*TODO========================================== */
+
+footer {
+    font-size: 1.6rem;
+    margin-top: 10%;
+    display: grid;
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "a1 a2 a3 a4"
+        "a5 a6 a7 a8"
+        "a9 a10 a11 a12"
+        "div_footer div_footer div_footer div_footer";
+}
+
+.a1 {
+    grid-area: a1;
+}
+
+.a2 {
+    grid-area: a2;
+}
+
+.a3 {
+    grid-area: a3;
+}
+
+.a4 {
+    grid-area: a4;
+}
+
+.a5 {
+    grid-area: a5;
+}
+
+.a6 {
+    grid-area: a6;
+}
+
+.a7 {
+    grid-area: a7;
+}
+
+.a8 {
+    grid-area: a8;
+}
+
+.a9 {
+    grid-area: a9;
+}
+
+.a10 {
+    grid-area: a10;
+}
+
+.a11 {
+    grid-area: a11;
+}
+
+.a12 {
+    grid-area: a12;
+}
+
+.div_footer {
+    grid-area: div_footer;
+}
+
+footer div {
+    margin: 5%;
+    display: flex;
+    gap: 3%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin: 2rem;
+}
+
+/*TODO ==========================================
+/*TODO            Media Query
+/*TODO========================================== */
+
+@media only screen and (max-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main figure {
+        margin: 25vh auto;
+    }
+
+    /* ==========================================
+/*           Burger Menü
+/*========================================== */
+
+
+    header nav {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger span {
+        background-color: black;
+        width: 50px;
+        height: 3px;
+        margin: 2px 0;
+        border-radius: 40px;
+    }
+}
