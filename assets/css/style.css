@@ -46,6 +46,7 @@ header {
     font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 5% 0;
 }
 
@@ -60,6 +61,57 @@ header nav a {
     color: black;
 }
 
+/*============ Für das Burger Menu ============*/
+
+header div {
+    display: none;
+    flex-direction: column;
+    margin: 2vh 20px 2vh 0;
+}
+
+header div span {
+    display: inline-block;
+    background: #000;
+    width: 60px;
+    height: 5px;
+    margin: 2px 0;
+    border-radius: 5px;
+}
+
+header section {
+    position: fixed;
+    background-color: rgb(203, 198, 198);
+    top: 0;
+    right: -100%;
+    bottom: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    transition: all 0.5s linear;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header section a {
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+header section p {
+    margin-top: 7rem;
+}
+
+header section p:hover {
+    text-decoration: red underline 3px;
+    cursor: alias;
+}
+
+
+header section a:hover {
+    text-decoration: underline;
+}
 
 /*? ==========================================
 /*?            Main
@@ -241,6 +293,10 @@ main figure>p {
     margin-top: 0.5rem;
 }
 
+main figcaption {
+    width: 70%;
+}
+
 /*TODO ==========================================
 /*TODO            Footer
 /*TODO========================================== */
@@ -379,22 +435,14 @@ footer p {
 /*           Burger Menü
 /*========================================== */
 
+    @media only screen and (max-width: 750px) {
+        header nav {
+            display: none;
+        }
 
-    header nav {
-        display: none;
-    }
-
-    .burger {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .burger span {
-        background-color: black;
-        width: 50px;
-        height: 3px;
-        margin: 2px 0;
-        border-radius: 40px;
+        header div {
+            display: flex;
+        }
     }
 
     /* ==========================================
