@@ -249,21 +249,20 @@ footer {
     font-size: 1.6rem;
     margin-top: 10%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    gap: 5rem; */
     gap: 5rem;
 
 
-    /* grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
         "a1 a2 a3 a4"
-        "a5 a6 a7 a8"
-        "a9 a10 a11 a12"
-        "div_footer div_footer div_footer div_footer"; */
+        "div_footer div_footer div_footer div_footer";
 }
 
-/* .a1 {
+.a1 {
     grid-area: a1;
 }
 
@@ -313,7 +312,7 @@ footer {
 
 .div_footer {
     grid-area: div_footer;
-} */
+}
 
 footer div {
     margin: 5%;
@@ -402,8 +401,15 @@ footer p {
 /*           Footer
 /*========================================== */
 
+
     footer {
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "a1"
+            "a2"
+            "a3"
+            "a4"
+            "div_footer";
     }
 
     footer div {
